@@ -1,3 +1,12 @@
+<?php
+
+$host = 'localhost';      
+$user = 'seoot';    
+$password = '';  
+$database = 'cadastro';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,13 +19,14 @@
     <div class="box">
     <div id="formulario">
         <h2>Cadastro</h2>
+        <form action=""></form>
         <form action="cadastro.php" method="post"></form>
         <br>
-        <input type="text" placeholder="Nome Completo" id="name" class="inputuser">
+        <input type="text" placeholder="Nome Completo" name="nome" id="name" class="inputuser">
         <br><br>
-        <input type="text" placeholder="RA" id="ra" class="inputuser" required>
+        <input type="text" placeholder="RA" name="ra" id="ra" class="inputuser" required>
         <br><br>
-        <label class="labelinput">Digito RA</label>
+        <label class="labelinput" name="digito">Digito RA</label>
         <select>
             <option>0</option>
             <option>1</option>
@@ -30,9 +40,9 @@
             <option>9</option>
         </select>
         <br><br>
-        <input type="date"  placeholder="Data de Nascimento" id="date" class="date" required>    
+        <input type="date"  placeholder="Data de Nascimento" name="data" id="date" class="date" required>    
         <br><br>
-        <label class="labelinput">UF</label>
+        <label class="labelinput" name="uf">UF</label>
         <select>
             <option>RP</option>
             <option>AC</option>
@@ -63,13 +73,13 @@
             <option>DF</option>
         </select>
         <br><br>
-        <input type="text" placeholder="Cidade" id="city" class="inputuser" required>
+        <input type="text" placeholder="Cidade" name="cidade" id="city" class="inputuser" required>
         <br><br>
-        <input type="text" placeholder="Escola" id="school" class="inputuser" required>
+        <input type="text" placeholder="Escola" id="school" name="escola" class="inputuser" required>
         <br><br>
-        <input type="text" placeholder="Email" id="email" class="inputuser">
+        <input type="text" placeholder="Email" name="email" id="email" class="inputuser">
         <br><br>
-        <input type="text" placeholder="Crie uma senha" id="senha" class="inputuser">
+        <input type="text" placeholder="Crie uma senha" name="senha" id="senha" class="inputuser">
         <br><br>
         <button class="cadastrar">Cadastrar-se</button>
     </div>
