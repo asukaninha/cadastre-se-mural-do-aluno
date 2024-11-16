@@ -1,9 +1,19 @@
 <?php
 
-$host = 'localhost';      
-$user = 'seoot';    
-$password = '';  
-$database = 'cadastro';
+include_once('config.php');
+
+$nome = $_POST['nome'];
+$ra = $_POST['nome'];
+$digito = $_POST['nome'];
+$data = $_POST['nome'];
+$uf = $_POST['nome'];  
+$cidade= $_POST['nome']; 
+$escola = $_POST['nome']; 
+$email = $_POST['nome'];
+$senha = $_POST['nome'];
+
+$result = mysqli_query($conexao, 'INSERT INTO usuarios(Nome, RA, Digito RA, Data Nacs, UF, Cidade, Escola, Email, Senha') 
+VALUES ($nome, $ra, $digito, $data, $uf, $cidade, $escola, $emial, $senha)'';
 
 ?>
 
